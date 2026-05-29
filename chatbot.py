@@ -1,6 +1,6 @@
 from google import genai
 from flask import Flask,request,jsonify
-client = genai.Client(api_key="AIzaSyBKkXfm5vB11M9BRoevTOWWft83mTKYTME")
+client = genai.Client(api_key="API KEY")
 while True:
     user_input = input("You: ")
     if user_input.lower() == "exit":
