@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 CORS(app,resources={r"/*": {"origins": "*"}})
-client = genai.Client(api_key="AQ.Ab8RN6J5Sf23alCt_8OH448--JDi-5p5wcDs838QA0HG7m4pCA")
+#client = genai.Client(api_key="Your API Key")
 
 @app.route("/summary",methods=["POST"])
 def summary():
