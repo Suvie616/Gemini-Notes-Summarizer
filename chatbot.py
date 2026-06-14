@@ -16,7 +16,7 @@ def summary():
     print("Received text:", user_input)
 
     response = client.models.generate_content(
-        model="gemini-3.5-flash",
+        model="gemini-3.1-flash-lite",
         contents=("Give a summary of this input:", user_input)
     )
     print("AI:", response.text)
