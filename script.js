@@ -5,7 +5,7 @@ const paragraph = document.querySelector("#infoText");
 button.addEventListener("click",async (e) => {
    const text = textarea.value;
  try {
-   const req = await fetch ("http://192.168.0.11:5000/summary", { 
+   const req = await fetch ("https://your-ngrok-url.ngrok.io/summary", { 
     method: "POST",
     headers: {
       "Content-Type": "application/json"
